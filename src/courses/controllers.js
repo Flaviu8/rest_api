@@ -1,5 +1,5 @@
-import { pool } from "../../db"
-import { getCoursesQuery } from "./queries"
+import { pool } from "../../db.js"
+import { getCoursesQuery } from "./queries.js"
 
 export const getCourses = (req, res) => {
     // res.send('Our students')

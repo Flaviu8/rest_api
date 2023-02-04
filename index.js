@@ -1,11 +1,12 @@
 import express from "express"
 import coursesRoutes from "./src/courses/routes.js"
 
+const app = express()
 
 app.use(express.json())
 const PORT = 5600
 
-const app = express()
+
 
 
 app.get('/', (req, res) =>{

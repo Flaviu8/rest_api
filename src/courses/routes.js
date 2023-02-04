@@ -1,8 +1,10 @@
 import express from "express";
-import { pool } from "../../db";
-import { getCourses } from "./controllers";
+import { getCourses } from "./controllers.js";
 
 const router = express.Router()
 
 
 router.get('/', getCourses )
+
+
+export default router
