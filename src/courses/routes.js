@@ -11,9 +11,9 @@ router.get('/', getCourses )
 
 
 router.post('/', (req, res) => {
-    const { final_score } = req.body
+    const { scores } = req.body
 
-    pool.query(CreateScore, [ final_score ], (error, result)=> {
+    pool.query(CreateScore, [ scores ], (error, result)=> {
      if (error) {
        res.status(500).send({ message: error.message });
        return;
