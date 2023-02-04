@@ -14,6 +14,6 @@ app.get('/', (req, res) =>{
     res.send('Homepage')
 })
 
-app.use('/score', coursesRoutes)
+app.use('/getscores', coursesRoutes)
 app.use('/score', scoreRoutes)
 app.listen(PORT, () => console.log(`Server is running on ${PORT}`))
