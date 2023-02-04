@@ -1,5 +1,6 @@
 import express from "express"
 import coursesRoutes from "./src/courses/routes.js"
+import scoreRoutes from "./src/courses/routes.js"
 
 const app = express()
 
@@ -14,4 +15,5 @@ app.get('/', (req, res) =>{
 })
 
 app.use('/courses', coursesRoutes)
+app.use('/score', scoreRoutes)
 app.listen(PORT, () => console.log(`Server is running on ${PORT}`))

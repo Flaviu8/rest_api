@@ -10,3 +10,5 @@ export const getCourses = (req, res) => {
 
     res.status(200).json(results.rows)
 }
+
+
